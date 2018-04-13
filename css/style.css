@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #9ad4e2;
+}
+
+.main-container {
+    display: flex;
+}
+
+.main-rigth {
+    background-image: url(images/clock.jpg);
+    background-repeat: no-repeat;
+    width: 797px;
+    height: 600px;
+}
+
+.main-text {
+    font-size: 72px;
+    font-weight: 700;
+    text-align: center;
+    width: 450px;
+    box-sizing:  border-box;
+    position: relative;
+    -webkit-animation: mymove 5s ; /* Safari 4.0 - 8.0 */
+    animation: mymove 3s;
+    animation-fill-mode: forwards;
+    /* padding-top: 49px; */
+}
+.div1 {-webkit-animation-timing-function: linear;}
+.div2 {-webkit-animation-timing-function: ease;}
+.div3 {-webkit-animation-timing-function: ease-in;}
+.div4 {-webkit-animation-timing-function: ease-out;}
+.div5 {-webkit-animation-timing-function: ease-in-out;}
+.div6 {-webkit-animation-timing-function: linear;}
+/* Standard syntax */
+
+.div1 {animation-timing-function: linear;}
+.div2 {animation-timing-function: ease;}
+.div3 {animation-timing-function: ease-in;}
+.div4 {animation-timing-function: ease-out;}
+.div5 {animation-timing-function: ease-in-out;}
+.div6 {animation-timing-function: linear;}
+/* Safari 4.0 - 8.0 */
+
+
+@-webkit-keyframes mymove {
+    from {left: 1500px;}
+    to {left: 0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: 1500px;}
+    to {left: 0px;}
+}
+
+
+
+.btn {
+    font-size: 22px;
+    width: 300px;
+    background-color: #6aabb1;
+    width: 276px;
+    margin-top: 27px;
+    padding: 12px 52px;
+    border: none;
+    cursor: pointer;
+}
+
+.btns-div {
+    width: 300px;
+    margin-left: 50%;
+    position: relative;
+    -webkit-animation-name: example;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+@keyframes example {
+    from {top: 0px;}
+    to {top: 200px; color:red;}
+}
+
+
+.mainBoard{
+    position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	visibility: hidden;
+
+}
+.modalBoard {
+    display: flex;
+    height: 500px;
+    width: 25%; 
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #04043b;
+    opacity: 1;
+    top: 10%;
+    left: 17%;
+    position: absolute;
+    overflow:hidden;
+}
+
+.modalBoard:hover
+{
+    overflow-y: scroll;
+} 
+
+.scrollStyle::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 15px;
+}
+
+.scrollStyle::-webkit-scrollbar
+{
+	width: 12px;
+}
+
+.scrollStyle::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color:#747992;
+}
+
+
+.modalBoardName {
+    font-size: 51px;
+    color: white;
+    display: inherit;
+    text-align: center;
+    /* margin-top: 98px; */
+}
+.modalBoardName:hover{
+    cursor: pointer;
+}
+.show-modalBoard {
+	opacity: 0.7;
+    visibility: visible;
+    /* display:none; */
+}
+
+
+
+.list {
+    display: inline-block;
+    color: #3a4ebb;
+    width: 200px;
+    font-size: 28px;
+    background-color: #a7a8e6;
+    padding: 4px 2px;
+    border-radius: 5px;
+    margin-left: 12px;
+}
+
+.list:hover {
+    background-color: #8183e9;
+    width: 200px;
+}
+
+.addList {
+    display: inline-block;
+    width: 200px;
+    background-color: #7f80bf;
+    padding: 3px;
+    margin: 10px 10px;
+    border-radius: 5px;
+}
+
+.addInput {
+    display: inline-block;
+    width: 190px;
+    height: 20px;
+    margin: 2px 3px;
+}
+
+.btnList {
+    display: inline-block;
+    padding: 4px 24px;
+    font-size: 16px;
+    border: none;
+    margin: 1px 3px;
+    background-color: #5aac44;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 4px;
+}
+
+.btnDelete {
+    display: inline-block;
+    padding: 6.5px 5px 4.5px 5px;
+    border: none;
+    color: #2f2f2f;
+}
+
+.btnDelete:hover {
+    color: #776f6f;
+}
+
+.list-text {
+    font-size: 15px;
+    display: block;
+    font-size: 20px;
+    background-color: beige;
+    color: #3a4ec4;
+    margin-top: 3px;
+}
+
+.tick
+{
+    content: url('images/tick.png');
+    position:relative;
+    float:right; 
+    width:30px;
+    height:30px;
+    cursor: pointer;
+    margin-top: -27px;
+}
+
+.tick1{
+content:url('images/greenTick.png');
+margin-top: -27px;
+float:right; 
+width:30px;
+height:30px;
+cursor: pointer;
+
+}
+.garbage{
+    content:url('images/garbage.png');
+ 
+}

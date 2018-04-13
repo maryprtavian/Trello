@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title> 
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/modal.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-item main-rigth">
+            <div class="btns-div">
+                <button class="btn  trigger" >CREATE BOARD</button>
+                <button class="btn triggerBoard">MY BOARDS</button>
+            </div>
+
+        </div>
+
+        <div class="modal">
+                <div class="modal-content">
+
+                    <input type="text" name="fname" id="name" placeholder="Input board name..." onfocus = "this.value=''">
+                     <a  onclick="createBoard()"    class="createBoard">CREATE BOARD</a>    <!--href="main.html"  -->
+                </div>
+            </div>
+
+          <div class="mainBoard">
+            <div class="modalBoard scrollStyle">
+                          <div class="modalBoars-content scrollbar">
+                              <span class="modalBoardName"> Your Boards</span>
+                            </div>
+           </div> 
+          </div>
+
+        <div class="main-item ">
+           <div class="div1 main-text">DON'T LOSE </div>
+           <div class="div2 main-text"> YOUR</div>
+           <div class="div3 main-text"> TIME...PLAN </div>
+           <div class="div4 main-text">YOUR TIME</div>
+           <div class="div5 main-text">WITH</div>
+           <div class="div6 main-text">TRELLO</div> 
+        </div>
+    </div>
+
+</body>
+<script src="js/board.js"></script>
+</html>
